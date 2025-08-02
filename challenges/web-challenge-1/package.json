@@ -1,0 +1,23 @@
+{
+  "name": "graphql-pocalypse",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "ts-node --esm src/index.ts",
+    "build": "tsc",
+    "seed": "node dist/seed.js"
+  },
+  "dependencies": {
+    "@apollo/server": "^5.0.0",
+    "@prisma/client": "^5.3.0",
+    "@graphql-tools/schema": "^10.0.0",
+    "@graphql-tools/utils": "^10.0.0",
+    "graphql": "^16.8.1"
+  },
+  "devDependencies": {
+    "prisma": "^5.3.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.4",
+    "@types/node": "^20.5.0"
+  }
+}

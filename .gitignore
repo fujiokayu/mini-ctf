@@ -1,0 +1,73 @@
+# Environment variables
+.env
+.env.local
+.env.production
+
+# Logs
+*.log
+logs/
+nginx/logs/
+ctfd/logs/
+
+# SSL Certificates
+certs/
+*.pem
+*.key
+*.crt
+*.csr
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+db_data/
+postgres_data/
+
+# Docker volumes and data
+docker-data/
+ctfd-data/
+pg-data/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Challenge files (if containing solutions)
+challenges/*/solution/
+challenges/*/writeup/
+challenges/*/flag.txt
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# Dependency directories
+node_modules/

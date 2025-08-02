@@ -1,0 +1,24 @@
+type User {
+  id: Int!
+  name: String!
+  role: String!
+  note: String
+  adminNote: String @auth
+}
+
+type Feedback {
+  id: Int!
+  message: String!
+  user: User!
+}
+
+type Query {
+  me: User!
+  user(id: Int!): User!
+}
+
+type Mutation {
+  createFeedback(message: String!, userId: Int!): Feedback!
+}
+
+directive @auth on FIELD_DEFINITION
